@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  api:
+    build: .
+    ports:
+      - "38083:5000"
+    volumes:
+      - "../src:/app"
+    environment:
+      FLASK_ENV: development
